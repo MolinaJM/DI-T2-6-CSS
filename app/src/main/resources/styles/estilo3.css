@@ -1,0 +1,24 @@
+/*oscuro*/
+
+.root {
+    -fx-font-family: 'Courier New', Courier, monospace;
+    -fx-background-color: #2e2e2e;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #cccccc;
+}
+
+.button {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555555;
+}
+
+.text-field, .combo-box, .check-box {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555555;
+}
+

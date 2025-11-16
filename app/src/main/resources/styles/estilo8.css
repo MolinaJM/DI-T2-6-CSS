@@ -1,0 +1,23 @@
+/*elegante*/
+
+.root {
+    -fx-font-family: 'Georgia', serif;
+    -fx-background-color: #fdf6e3;
+}
+
+.label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #586e75;
+}
+
+.button {
+    -fx-background-color: #268bd2;
+    -fx-text-fill: #fdf6e3;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box, .check-box {
+    -fx-border-color: #93a1a1;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}

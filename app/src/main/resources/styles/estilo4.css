@@ -1,0 +1,23 @@
+/*empresarial*/
+
+.root {
+    -fx-font-family: 'Calibri', sans-serif;
+    -fx-background-color: #e5e5e5;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+}
+
+.button {
+    -fx-background-color: #0056b3;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box, .check-box {
+    -fx-border-color: #b3b3b3;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}

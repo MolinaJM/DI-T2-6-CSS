@@ -1,0 +1,23 @@
+/* Clases*/
+.label {
+    -fx-font-size: 14px;
+}
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+/* Subclases */
+.text-field, .combo-box, .check-box {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+/*Estilo común de error*/
+.error {
+    -fx-background-color: #444444; /*fondo oscuro */
+    -fx-text-fill: #ffffff; /* texto claro */
+    -fx-border-color: #ff4d4d; /*Borde rojo brillante para indicar error */
+    -fx-border-width: 2px;
+}

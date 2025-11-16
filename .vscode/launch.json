@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        { //Esta opción es útil cuando estamos con un archivo abierto y queremos lanzarlo sin configuración extra
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path C:\\javafx-sdk-25\\lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.fxml --enable-native-access=javafx.graphics",
+            "projectName": "app"
+        }
+    ]
+}

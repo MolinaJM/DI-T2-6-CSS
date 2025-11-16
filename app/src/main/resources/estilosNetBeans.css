@@ -1,0 +1,21 @@
+/* ID para label de JavaFX */
+#titulo-personalizado {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: blue;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(three-pass-box, #00FF00, 10, 0, 0, 0); 
+    /* Efecto de sombra: tipo de blur(three-pass-box), color, radio, x, y, spread */
+}
+/* Clase para radio*/
+.radio-button{
+    -fx-background-color: blue; 
+}
+/* SUBClase para radio*/
+.check-especial{
+    -fx-font-style: italic; 
+}
+
+
+
+

@@ -1,0 +1,23 @@
+/*retro*/
+
+.root {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-background-color: #000000;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #00ff00;
+}
+
+.button {
+    -fx-background-color: #000000;
+    -fx-text-fill: #00ff00;
+    -fx-border-color: #00ff00;
+}
+
+.text-field, .combo-box, .check-box {
+    -fx-background-color: #000000;
+    -fx-text-fill: #00ff00;
+    -fx-border-color: #00ff00;
+}

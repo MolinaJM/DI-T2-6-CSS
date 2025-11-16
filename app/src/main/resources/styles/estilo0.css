@@ -1,0 +1,35 @@
+/*clásico*/
+
+@font-face {
+    font-family: 'Pixar'; /*Abrimos el TTF y miramos el nombre de la familia*/
+    src: url('Pixar.ttf'); /*Aplicamos una fuente local TTF*/
+}
+
+.root {
+    -fx-font-family: 'Pixar';
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box, .check-box {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+/*Estilo para los campos de texto con error de validación */
+.text-field-error, .combo-box-error, .check-box-error {
+    -fx-background-color: #444444; /*Mantenemos fondo oscuro */
+    -fx-text-fill: #ffffff; /* Mantenemos el texto claro */
+    -fx-border-color: #ff4d4d; /* Borde rojo brillante para indicar error */
+    -fx-border-width: 2px;
+}
