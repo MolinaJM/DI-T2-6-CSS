@@ -14,19 +14,19 @@
 }
 /*---------------------------------------------------*/
 /* SubClases */
-.label-especial{
+.label-especial{ /* Para todos los label menos para provincia */
     -fx-background-color: darkgray;
     -fx-font-size: 14px;
     -fx-text-fill: #333333;
     -fx-font-weight: bold;
 }
-.textfield-especial {
+.textfield-especial { /*Para nombre y apellido*/
     -fx-background-color: #f0f0f0;
     -fx-border-color: #CCCC00;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0, 0, 2);
 }
 /*---------------------------------------------------*/
-/* Identificador para combobox de JavaFX */
+/* Identificador para Email de JavaFX */
 #label-personalizada {
     -fx-background-color: #ffffff;
     -fx-border-color: #999999;

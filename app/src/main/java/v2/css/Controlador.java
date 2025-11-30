@@ -218,39 +218,38 @@ public class Controlador implements Initializable {
             vSnombre.setValidationDecorator(decorador);
         });
 
-        //Validación CSS
+        //Validación CSS------------------------------------------------------------------------------------------
         //Aplicamos estilos CSS en función del resultado de la validación
-//        vSnombre.validationResultProperty().addListener((observable, oldValue, newValue) -> {
-//            if (newValue.getErrors().isEmpty() && newValue.getWarnings().isEmpty()) {
-//                nombreTextField.getStyleClass().remove("error");
-//            } else {
-//                if (!nombreTextField.getStyleClass().contains("error")) {
-//                    nombreTextField.getStyleClass().add("error");//evita volver a aplicar estilo
-//                }
-//            }
-//        });
+       vSnombre.validationResultProperty().addListener((observable, oldValue, newValue) -> {
+           if (newValue.getErrors().isEmpty() && newValue.getWarnings().isEmpty()) {
+               nombreTextField.getStyleClass().remove("error");
+           } else {
+               if (!nombreTextField.getStyleClass().contains("error")) {
+                   nombreTextField.getStyleClass().add("error");//evita volver a aplicar estilo
+               }
+           }
+       });
 
         //Variante: Recorremos todos los validadores y aplicamos css
         //Requiere crear el efecto DropShadow        
-        for (ValidationSupport vS : validadores) {
-            vS.validationResultProperty().addListener((observable, oldValue, newValue) -> {
-                Set<Control> controles = vS.getRegisteredControls();//Cogemos control/es
-                System.out.println(controles.size());
-                for (Control c : controles) {//Recorremos Set
-                    System.out.println(c);
-                    if (newValue.getErrors().isEmpty() && newValue.getWarnings().isEmpty()) {
-                        c.getStyleClass().remove("error");
-                        c.setEffect(creaDropShadow(Color.GREEN));
-                    } else {
-                        if (!c.getStyleClass().contains("error")) {
-                            c.getStyleClass().add("error");//evita volver a aplicar estilo
-                            c.setEffect(creaDropShadow(Color.RED));
-                        }
-                    }
-                }
-            });
-        }
-
+    //     for (ValidationSupport vS : validadores) {
+    //         vS.validationResultProperty().addListener((observable, oldValue, newValue) -> {
+    //             Set<Control> controles = vS.getRegisteredControls();//Cogemos control/es en un Set (por definición no tiene duplicados y todo es del mismo tipo)
+    //             System.out.println(controles.size());
+    //             for (Control c : controles) {//Recorremos Set
+    //                 System.out.println(c);
+    //                 if (newValue.getErrors().isEmpty() && newValue.getWarnings().isEmpty()) {
+    //                     c.getStyleClass().remove("error");
+    //                     // c.setEffect(creaDropShadow(Color.GREEN)); //Descomentar una vez visto el efecto de .error
+    //                 } else {
+    //                     if (!c.getStyleClass().contains("error")) {
+    //                         c.getStyleClass().add("error");//evita volver a aplicar estilo
+    //                         // c.setEffect(creaDropShadow(Color.RED)); //Descomentar una vez visto el efecto de .error
+    //                     }
+    //                 }
+    //             }
+    //         });
+    //     }
     }
     
     private DropShadow creaDropShadow(Color c){
@@ -261,6 +260,8 @@ public class Controlador implements Initializable {
         dropShadow.setColor(c);
         return dropShadow;
     }
+
+    //Validación CSS------------------------------------------------------------------------------------------
 
     private Label iconoPersonalizadoEtiqueta() {
         Label errorLabel = new Label("X");

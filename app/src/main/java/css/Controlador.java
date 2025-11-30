@@ -102,7 +102,8 @@ public class Controlador implements Initializable {
         //Se aplica por ID y por clase
         titulo.setId("titulo-personalizado");
         condicCheckBox.getStyleClass().add("check-especial");
-        //condicCheckBox.getStyleClass().clear(); //Limpiaría el estilo asignado
+        
+        //titulo.getStyleClass().clear(); //Limpiaría el estilo asignado
 
         stylesheets = new ArrayList<>();
         //Cargamos todas las hojas de estilo en el array

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="raiz" minWidth="-Infinity" prefHeight="378.0" prefWidth="290.0" spacing="20.0" stylesheets="@estilosSceneBuilder.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="css.Controlador">
+<VBox fx:id="raiz" minWidth="-Infinity" prefHeight="378.0" prefWidth="290.0" spacing="20.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="css.Controlador">
    <VBox alignment="CENTER">
       <children>
         <Label fx:id="titulo" text="FICHA DEL ALUMNO/A">
@@ -23,14 +23,14 @@
    </VBox>
 
   <HBox spacing="20.0">
-      <Label fx:id="etiqNombre" styleClass="label-especial" text="Nombre:" />
-      <TextField fx:id="nombreTextField" prefHeight="25.0" prefWidth="165.0" styleClass="textfield-especial" />
+      <Label fx:id="etiqNombre" text="Nombre:" />
+      <TextField fx:id="nombreTextField" prefHeight="25.0" prefWidth="165.0" />
       <Label fx:id="etiqIconoNombre" />
   </HBox>
 
   <HBox prefHeight="25.0" prefWidth="204.0" spacing="20.0">
       <Label id="label-personalizada" fx:id="etiqEmail" styleClass="label-especial" text="Email:" />
-      <TextField fx:id="emailTextField" prefHeight="25.0" prefWidth="182.0" styleClass="textfield-especial" />
+      <TextField fx:id="emailTextField" prefHeight="25.0" prefWidth="182.0" />
   </HBox>
 
   <HBox spacing="20.0">
