@@ -40,8 +40,8 @@ public class Main extends Application {
 
         // Cargamos la nueva CSS desde aquí (aplica clases directamente, subclases e ID)
         scene.getStylesheets().add(getClass().getResource("/estilosPorCódigo.css").toString());
-        // scene.getStylesheets().remove(0);//Elimina la primera css añadida desde aquí
-        // scene.getStylesheets().clear();//Las limpia todas
+        // scene.getStylesheets().remove(0);//Elimina la primera css añadida desde aquí (quita estilo de título, radios y checkbos)
+        // scene.getStylesheets().clear();//Las limpia todas las aplicadas desde aquí por código (si hubiera más de una)
 
         primeraEscena.setScene(scene);
         primeraEscena.setTitle("CSS (Pulsa F1!!)");
