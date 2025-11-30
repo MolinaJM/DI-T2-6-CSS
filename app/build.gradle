@@ -4,8 +4,6 @@ plugins {
 }
 
 repositories {
-	jcenter()
-	google()
 	mavenCentral()
 }
 
@@ -32,7 +30,7 @@ sourceSets {
   main {
     resources {
         srcDirs = ["src/main/resources"]
-        includes = ["**/*.fxml","**/*.png","**/*.css"]  //Importante para poder abrir una extensión no reconocida
+        includes = ["**/*.fxml","**/*.png","**/*.css","**/*.ttf"]  //Importante para poder abrir una extensión no reconocida
     }
   }
 }

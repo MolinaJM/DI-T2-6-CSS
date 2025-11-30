@@ -4,7 +4,15 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        { //Esta opción es útil cuando estamos con un archivo abierto y queremos lanzarlo sin configuración extra
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "css.Main",
+            "vmArgs": "--module-path C:\\javafx-sdk-25\\lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.fxml --enable-native-access=javafx.graphics",
+            "projectName": "app"
+        },
+        {
             "type": "java",
             "name": "Current File",
             "request": "launch",
